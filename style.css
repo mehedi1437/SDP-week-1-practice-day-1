@@ -1,0 +1,40 @@
+
+li{
+    list-style: none;
+}
+.nav-item{
+    gap: 150px;
+}
+.banner{
+    background-image: url("images/Div\ [banner]\ \(3\).png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 85vh;
+}
+.banner-img{
+    position: relative;
+    bottom: 5px;
+}
+.logo{
+    gap: 100px;
+}
+.card-img{
+    position: relative;
+    left: 38%;
+    top: 15px;
+    width: 25%;
+    height: 25%;
+}
+.all-card{
+    height: 680px;
+    margin-bottom: 50px;
+}
+.footer-container{
+   color: C0BABA;
+}
+.cl{
+    border: none;
+    background-color: #413939;
+    color: aliceblue;
+}
