@@ -1,40 +1,251 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+       
+}
+.banner{
+    height: 100vh;
+    width: 100vw;
+}
+.banner-img{
+    background-image: url('./images/Div\ [banner]\ \(3\).png');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    
+}
 li{
     list-style: none;
 }
-.nav-item{
-    gap: 150px;
+.navar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto ;
+    padding-top: 30px;
+    color: #FB9D5C;
 }
-.banner{
-    background-image: url("images/Div\ [banner]\ \(3\).png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100vw;
-    height: 85vh;
+.routes{
+    display: flex;
+    
 }
-.banner-img{
-    position: relative;
-    bottom: 5px;
+.routes li{
+    margin: 0 20px;
 }
-.logo{
-    gap: 100px;
+
+.bg-left p{
+    color: #FB9D5C;
+    font-size: 20px;
+    
 }
-.card-img{
-    position: relative;
-    left: 38%;
-    top: 15px;
-    width: 25%;
-    height: 25%;
+.bg-left h3{
+    color: white;
+    font-size: 50px;
+    margin: 20px 0;
+    
 }
-.all-card{
-    height: 680px;
+
+.background-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto ;
     margin-bottom: 50px;
+    text-align: center;
+  
+    
 }
-.footer-container{
-   color: C0BABA;
+.bg-content-img{
+    height: 633px;
 }
-.cl{
+.btn{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
     border: none;
-    background-color: #413939;
-    color: aliceblue;
+    background-color: #FB9D5C;
+
+    
 }
+
+/* Sub banner Section */
+
+.sub-banner{
+    height: 140px;
+    width: 100vw;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Service header section */
+.service-header{
+    text-align: center;
+    margin: 40px 0;
+}
+.service-header h2{
+    font-size: 40px;
+}
+.service-header h1{
+    color: #FB9D5C;
+    margin: 10px 0;
+}
+.service-header p{
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+/* service card section  */
+.service-card{
+    max-width: 1100px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+.card{
+    border: 2px solid #A5A1A1;
+    height: 280px;
+    width: 356px;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+.card h2{
+    color: #FB9D5C;
+    margin: 10px 0;
+}
+/* Hire us section */
+.hire-us{
+    max-width: 1100px;
+    display: flex;
+    margin: 80px auto 0 auto;
+    
+}
+.hire-content{
+    text-align: left;
+    margin-left: 50px;
+    
+}
+
+.hire-content h1 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+.hire-content h1 span{
+
+    color: #FB9D5C;
+}
+.hire-content p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+/* footer section */
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 400px;
+    background-color: #151515;
+    color: #C0BABA;
+    gap: 30px;
+    /* padding-top: 40px; */
+    padding: 40px 50px;
+
+}
+
+/* mobile device responsive */
+@media only screen and (max-width: 425px) {
+
+    .background-content{
+        display: contents;
+        margin-top: 30px;
+    }
+    .bg-content-img{
+        height: 300px;
+        width: 200px;
+    }
+    .bg-left p{
+        margin-top: 30px;
+        color: #FB9D5C;
+        font-size: 20px;
+        
+    }
+    .bg-left h3{
+        color: white;
+        font-size: 30px;
+        margin: 14px 0;
+        
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+    /* Sub banner */
+    .sub-banner{
+        display: contents;
+    }
+    .sub-banner img{
+        margin: 30px;
+    }
+    /* Service header */
+    .service-header h2{
+        font-size: 25px;
+    }
+    .service-header h1{
+        color: #FB9D5C;
+        margin: 6px 0;
+    }
+    .service-header p{
+        font-size: 15px;
+        margin: 0 10px;
+    }
+    /* secrvice card section */
+    .service-card{
+        display: contents;
+        
+    }
+    .card{
+        margin: 40px 40px;
+    }
+
+    /* hire us section */
+    .hire-us{
+        display: contents;
+        
+    }
+    .hire-img{
+        
+        width: 425px;
+    }
+    .hire-content{
+        margin-top: 20px;
+    }
+    .hire-content h1 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    .hire-content h1 span{
+    
+        color: #FB9D5C;
+    }
+    .hire-content p {
+        margin-bottom: 30px;
+        font-size: 12px;
+        padding-right: 7px;
+    }
+    /* footer section */
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 770px;
+    
+    }
+   
+
+  }
